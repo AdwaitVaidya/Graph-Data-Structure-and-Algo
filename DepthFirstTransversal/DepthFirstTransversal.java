@@ -38,14 +38,12 @@ class Vertica {
 }
 
 class Graph{
-    int minimumDistance = 0;
     Stack<Vertica> currentStack = new Stack<>();
     Vertica[] verticas;
     Vertica startVertica;
 
     Graph(Vertica[] verticas){
         this.verticas = verticas;
-        this.minimumDistance = verticas.length;
     }
 
     public void getBreadthFirstTransversal(Vertica startVertica) {
