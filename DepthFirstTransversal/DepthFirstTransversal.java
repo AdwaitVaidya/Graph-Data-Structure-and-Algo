@@ -46,13 +46,13 @@ class Graph{
         this.verticas = verticas;
     }
 
-    public void getBreadthFirstTransversal(Vertica startVertica) {
+    public void getDepthFirstTransversal(Vertica startVertica) {
         this.startVertica = startVertica;
         currentStack.push(startVertica);
         backBreadthFirstTransversal(startVertica);
     }
 
-    void backBreadthFirstTransversal(Vertica currentVertica){
+    void backDepthFirstTransversal(Vertica currentVertica){
         System.out.println(currentVertica);
         currentVertica.setTransversed(true);
         //if (currentVertica == startVertica) return;
